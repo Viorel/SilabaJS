@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Test Silaba</title>
+
+    <script src="Silaba.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+
+        var textAnterior = "";
+        var t = undefined;
+
+        function Taimer()
+        {
+            var text = document.getElementById( "cuvinte" ).value;
+
+            if( textAnterior == text ) return;
+
+            textAnterior = text;
+
+            clearTimeout( t );
+            t = setTimeout( Desparte, 444 );
+        }
+
+        function Desparte()
+        {
+            let tbc = document.getElementById( "cuvinte" );
+            let tbr = document.getElementById( "rezultat" );
+
+            var text = tbc.value;
+
+            //console.info("cuvint: ", text);
+
+            var rezultat = Silaba.Desparte( text );
+
+            tbr.value = rezultat;
+
+            if( tbr.scrollTop != tbc.scrollTop )
+            {
+                tbr.scrollTop = tsr = tbc.scrollTop;
+            }
+        }
+
+        function OnLoad()
+        {
+            document.getElementById( "cuvinte" ).focus();
+
+            setInterval( Taimer, 333 );
+        }
+
+        var tsc = undefined;
+        var tsr = undefined;
+
+        function ScrollC()
+        {
+            let tbc = document.getElementById( "cuvinte" );
+            let tbr = document.getElementById( "rezultat" );
+
+            if( tsc !== undefined )
+            {
+                if( tbc.scrollTop === tsc ) tsc = undefined;
+
+                return;
+            }
+
+            tbr.scrollTop = tsr = tbc.scrollTop;
+        }
+
+        function ScrollR()
+        {
+            let tbc = document.getElementById( "cuvinte" );
+            let tbr = document.getElementById( "rezultat" );
+
+            if( tsr !== undefined )
+            {
+                if( tbr.scrollTop === tsr ) tsr = undefined;
+
+                return;
+            }
+
+            tbc.scrollTop = tsc = tbr.scrollTop;
+        }
+
+    </script>
+</head>
+<body onload="OnLoad()">
+
+    <table>
+        <tr>
+            <td>Cuvinte</td>
+            <td>Rezultat</td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="cuvinte" style="width: 300pt; height: 400pt; " wrap="off" onscroll="ScrollC()"></textarea>
+            </td>
+            <td>
+                <!--readonly="readonly"-->
+                <textarea id="rezultat" style="width: 300pt; height: 400pt; " wrap="off" onscroll="ScrollR()" readonly="readonly">
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
