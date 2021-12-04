@@ -1,7 +1,6 @@
 # SilabaJS
-Despărțitor în silabe
 
-„Silaba” a reprezentat un despărțitor în silabe, realizat prin anii 1995-2000 pentru o serie de programe de tehnoredactare computerizată, precum Ventura, PageMaker, Word, InDesign, XPress, în limbajul de programare C++.
+**„Silaba”** a reprezentat un despărțitor în silabe, realizat prin anii 1995-2000 în limbajul de programare C++ pentru o serie de programe de tehnoredactare computerizată, precum Ventura, PageMaker, Word, InDesign, XPress.
 
 Acest depozit GIT redă algoritmul de segmentare prin mijloace JavaScript. 
 
@@ -12,6 +11,8 @@ Pentru experimentare, urmați acești pași:
 *	...
 * In cîmpul „Cuvinte”, introduceți cuvintele care urmează a fi despărțite în silabe. (Pot fi introduse mai multe cuvinte pe linie). Cîmpul „Resultat” va afișa rezultatele segmentării pentru toate cuvintele introduse.
  
+---
+
 Acest despărțitor are următoarele caracteristici.
 
 ### Despărțirea „după structură”
@@ -24,7 +25,11 @@ Față de versiunile anterioare, algoritmul a fost actualizat în conformitate c
 
 ### Diferențe față de despărțirea strictă
 
-Acest despărțitor încearcă să pună cratimele numai în poziții sigure. De exemplu, cuvîntul „deși” nu este despărțit, pentru că acesta este ori conjuncție monosilabică, care nu se desparte, ori pluralul adjectivului „des”. Unele cuvinte, care încep cu posibile prefixe, ca de exemplu „sub”, nu se despart complet dacă rolul lui „sub” este incert. Iar unele cuvinte care includ „ia” nu sînt despărțite în poziția „i-a” dacă dicționarul intern nu conține suficiente detalii despre proprietățile acestei secvențe (diftong sau hiat).
+Acest despărțitor încearcă să pună cratimele numai în poziții sigure. De exemplu, cuvîntul „deși” nu este despărțit, pentru că acesta este ori conjuncție monosilabică, care nu se desparte, ori pluralul adjectivului „des”, care s-ar despărți „de-și”. 
+
+Unele cuvinte, care încep cu posibile prefixe, de exemplu, „sub”, nu se despart complet dacă rolul lui „sub” este incert. 
+
+Iar unele cuvinte, care includ secvențe vocalice, de exemplu, „ia”, nu sînt despărțite în poziția „i-a” dacă dicționarul intern nu conține suficiente detalii despre natura acestei secvențe (diftong sau hiat).
 
 De obicei, despărțirea incompletă nu reprezintă o problemă, deoarece programele de tehnoredactare distribuie spații compensatorii între cuvinte. Programele mai includ funcții de despărțire manuală, care pot fi aplicate dacă rezultatul produs de despărțitor este insuficient.
 
