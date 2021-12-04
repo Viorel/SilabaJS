@@ -1,0 +1,2 @@
+# SilabaJS
+Despărțitor în silabe
