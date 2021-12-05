@@ -8,7 +8,9 @@ Pentru experimentare, urmați acești pași:
 
 * Descărcați fișierele **Silaba.js** și **TestSilabaJS.html**; plasați-le într-un folder oarecare. Dacă descărcați o arhivă, dezarhivați-o.
 * Deschideți fișierul descărcat **TestSilabaJS.html** într-un navigator Web modern (de ex.: Microsoft Edge). Navigatorul va afișa două cîmpuri de text:
-*	...
+ 
+![image](https://user-images.githubusercontent.com/246827/144752910-7b21fef5-bc6a-4780-bbdc-ca13d8a6e381.png)
+
 * In cîmpul „Cuvinte”, introduceți cuvintele care urmează a fi despărțite în silabe. (Pot fi introduse mai multe cuvinte pe linie). Cîmpul „Resultat” va afișa rezultatele segmentării pentru toate cuvintele introduse.
  
 ---
@@ -39,5 +41,5 @@ Nu se face despărțirea care ar produce segmente cu sens neelegant.
 
 ---
 
-Sper că transformarea codului din C++ în JavaScript nu a introdus defecte.
+Sper că transformarea codului din C++ în JavaScript nu a introdus defecte. Unele ajustări ale dicționarului intern mai sînt în lucru.
 
