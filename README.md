@@ -37,6 +37,8 @@ De obicei, despărțirea incompletă nu reprezintă o problemă, deoarece progra
 
 Silabele constituite dintr-o singură vocală de la începutul sau sfîrșitul cuvintelor sînt considerate neeconomice, de aceea astfel de silabe sînt evitate.
 
+Cuvintele care sînt sau se aseamănă cu numerele romane nu se despart (de exemplu: „viii”).
+
 Nu se face despărțirea care ar produce segmente cu sens neelegant.
 
 ---
