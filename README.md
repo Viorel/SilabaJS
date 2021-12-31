@@ -23,7 +23,7 @@ Acest despărțitor are următoarele caracteristici.
 
 ### Actualizare conform DOOM 2 și DOOM 3
 
-Față de versiunile anterioare, algoritmul a fost actualizat în conformitate cu _Dicționarul ortografic, ortoepic și morfologic al limbii române. Ediția a II-a revăzută și adăugită_ (DOOM 2). Actualizarea conform Ediției a III-a (DOOM 3), apărute recent, este în curs de examinare.
+Față de versiunile anterioare, algoritmul a fost actualizat în conformitate cu _Dicționarul ortografic, ortoepic și morfologic al limbii române. Ediția a II-a revăzută și adăugită_ (DOOM 2). Actualizarea conform Ediției a III-a (DOOM 3) este în curs de examinare.
 
 ### Diferențe față de despărțirea strictă
 
