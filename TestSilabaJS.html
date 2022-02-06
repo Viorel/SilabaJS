@@ -83,20 +83,50 @@
         }
 
     </script>
+
+    <style>
+        *
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F5F5F5;
+        }
+
+        label
+        {
+        }
+
+        textarea
+        {
+            font-family: monospace, 'Courier New', Courier;
+            border: 1pt solid gray;
+            border-radius: 3pt;
+            width: 300pt;
+            height: 400pt;
+            padding: 3pt;
+        }
+
+        textarea:not(:read-only)
+        {
+            background-color: white;
+        }
+    </style>
 </head>
 <body onload="OnLoad()">
 
     <table>
         <tr>
-            <td>Cuvinte</td>
-            <td>Rezultat</td>
+            <td>
+                <label for="cuvinte">Cuvinte</label></td>
+            <td>
+                <label for="rezultat">Despărțire în silabe</label></td>
         </tr>
         <tr>
             <td>
-                <textarea id="cuvinte" style="width: 300pt; height: 400pt; " wrap="off" onscroll="ScrollC()" lang="ro"></textarea>
+                <textarea id="cuvinte" wrap="off" onscroll="ScrollC()" lang="ro" title="Cuvinte" placeholder="Introduceți cuvintele">
+                </textarea>
             </td>
             <td>
-                <textarea id="rezultat" style="width: 300pt; height: 400pt; " wrap="off" onscroll="ScrollR()" readonly="readonly">
+                <textarea id="rezultat" wrap="off" onscroll="ScrollR()" lang="ro" readonly="readonly">
                 </textarea>
             </td>
         </tr>
