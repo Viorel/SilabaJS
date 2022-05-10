@@ -9,9 +9,9 @@ Pentru experimentare, urmați acești pași:
 * Descărcați fișierele **Silaba.js** și **TestSilabaJS.html**; plasați-le într-un folder oarecare. Dacă descărcați o arhivă, dezarhivați-o.
 * Deschideți fișierul descărcat **TestSilabaJS.html** într-un navigator Web modern (de ex.: Microsoft Edge). Navigatorul va afișa două cîmpuri de text:
  
-![image](https://user-images.githubusercontent.com/246827/144776212-a8b4c99d-60e7-4ade-90c9-8123f951e755.png)
+![image](https://user-images.githubusercontent.com/246827/167702599-48c9810e-001b-4872-be89-a50fc2cd74ed.png)
 
-* In cîmpul „Cuvinte”, introduceți cuvintele care urmează a fi despărțite în silabe. (Pot fi introduse mai multe cuvinte pe linie). Cîmpul „Resultat” va afișa rezultatele segmentării pentru toate cuvintele introduse.
+* In cîmpul „Cuvinte”, introduceți cuvintele care urmează a fi despărțite în silabe. (Pot fi introduse mai multe cuvinte pe linie). Cîmpul „Despărțire în silabe” va afișa rezultatele segmentării pentru toate cuvintele introduse.
  
 ---
 
@@ -21,9 +21,9 @@ Acest despărțitor are următoarele caracteristici.
 
 În principal, despărțitorul realizează modalitatea de segmentare „după structură”. De exemplu, cuvîntul „subacvatic” este despărțit „sub-acvatic”, nu „su-bacvatic”, care reprezintă o altă modalitate permisă („după pronunțare”).
 
-### Actualizare conform DOOM 2 și DOOM 3
+### Actualizare conform DOOM 3
 
-Față de versiunile anterioare, algoritmul a fost actualizat în conformitate cu _Dicționarul ortografic, ortoepic și morfologic al limbii române. Ediția a II-a revăzută și adăugită_ (DOOM 2). Actualizarea conform Ediției a III-a (DOOM 3) este în curs de examinare.
+Față de versiunile anterioare, algoritmul a fost actualizat în conformitate cu _Dicționarul ortografic, ortoepic și morfologic al limbii române. Ediția a III-a revăzută și adăugită_ (DOOM 3), inclusiv Erata din aprilie 2022.
 
 ### Diferențe față de despărțirea strictă
 
@@ -35,7 +35,7 @@ Iar unele cuvinte care includ secvențe vocalice, de exemplu: „ia”, nu sînt
 
 De obicei, despărțirea incompletă nu reprezintă o problemă, deoarece programele de tehnoredactare distribuie spații compensatorii între cuvinte. Programele mai includ funcții de despărțire manuală, care pot fi aplicate dacă rezultatul produs de despărțitor este insuficient.
 
-Silabele constituite dintr-o singură vocală de la începutul sau sfîrșitul cuvintelor sînt considerate neeconomice, de aceea astfel de silabe sînt evitate.
+Silabele constituite dintr-o singură vocală de la începutul sau sfîrșitul cuvintelor sînt considerate neeconomice, de aceea astfel de despărțiri sînt evitate.
 
 Cuvintele care sînt sau se aseamănă cu numerele romane nu se despart (de exemplu: „viii”).
 
@@ -43,5 +43,5 @@ Nu se face despărțirea care ar produce segmente cu sens neelegant.
 
 ---
 
-Sper că transformarea codului din C++ în JavaScript nu a introdus defecte. Unele ajustări ale dicționarului intern mai sînt în lucru.
+Sper că transformarea codului din C++ în JavaScript nu a introdus defecte.
 
