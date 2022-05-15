@@ -33,11 +33,11 @@ De obicei, segmentarea incompletă nu reprezintă o problemă, deoarece programe
 
 Silabele constituite dintr-o singură vocală de la începutul sau sfîrșitul cuvintelor sînt considerate neeconomice, de aceea astfel de despărțiri sînt evitate.
 
-Cuvintele care sînt sau se aseamănă cu numerele romane nu se despart (de exemplu: „viii”).
+Cuvintele care se aseamănă cu numerele romane nu se despart (de exemplu: „viii”).
 
 Nu se face despărțirea care ar produce segmente cu sens neelegant.
 
 ---
 
-Sper că transformarea codului din C++ în JavaScript (cam initilă, ce-i drept) nu a introdus defecte.
+Sper că transformarea codului din C++ în JavaScript (cam inutilă, ce-i drept) nu a introdus defecte.
 
